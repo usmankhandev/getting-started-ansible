@@ -1,3 +1,5 @@
+192.168.179.81
+
 # This is the default ansible 'hosts' file.
 #
 # It should live in /etc/ansible/hosts
@@ -23,14 +25,14 @@
 ## beta.example.org
 ## 192.168.1.100
 ## 192.168.1.110
-[hostname]
-web-server1 ansible_host=192.168.179.81 ansible_user=osboxes
+#[hostname]
+#web-server1 ansible_host=192.168.179.81 ansible_user=osboxes
 
 # If you have multiple hosts following a pattern, you can specify
 # them like this:
 
-#[all:vars]
-#ansible_python_interpretor=/usr/bin/python3
+[all:vars]
+ansible_python_interpretor=/usr/bin/python3
 
 ## www[001:006].example.com
 

@@ -1,0 +1,16 @@
+---
+
+- hosts: all
+  become: true
+  tasks: 
+
+  - name: Install httpd on Centos
+    package:
+      name: httpd
+
+  - name: Update Repository Index in Centos
+    package:
+      update_cache: true
+
+
+

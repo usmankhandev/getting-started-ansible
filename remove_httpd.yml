@@ -1,0 +1,17 @@
+---
+
+- hosts: all
+  become: true
+  tasks: 
+
+  - name: Remove httpd from Centos
+    package:
+      name: httpd
+      state: absent
+
+  - name: Update Repository Index in Centos
+    package:
+      update_cache: true
+ 
+
+
